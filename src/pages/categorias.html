@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/output.css">
+    <title>TechStore Pro - Su tienda tecnologica onlinet </title>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo mejorado coherente con carrito.html-->
+                 <div class=" flex items-center">
+                    <div class="bg-linear-to-r from-blue-600 to-purple-600
+                    text-white px-3 py-2 rounded-lg mr-3">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0
+                        01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1
+                        1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1
+                        1 0 001 1h2a1 1 0 001-1v-6a1 10 00-1-1h-2z"/>
+                    </svg>
+
+                    </div>
+                    <h1 class="text-2xl font-bold bg-linear-to-r from-blue-600
+                    to-purple-600 bg-clip-text text-transparent">
+                    <a href="../pages/index.html">TechStore Pro</a>
+                    </h1>
+                 </div>
+                 <!-- menu .html -->
+                  <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600
+                    font-medium transition-colors duration-200 relative group">Inicio
+                 <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-600"></span>
+                </a>
+                <a href="productos.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors
+                duration-200 relative group">Productos
+            <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all
+            duration-200 group-hover:w-full"></span>
+            </a>
+            <a href="./categorias.html" class="text-gray-700 hover:text-blue-600 font-medium transition-colors
+            duration-200 relative group">Categorias
+        <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all
+        duration-200 group-hover:w-full"></span>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition-colors
+        duration-200 relative group">Contacto
+    <span class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all
+    duration-200 group-hover:w-full"></span>
+    </a>
+                  </div>
+                  <!-- Cart and Mobile Menu MEJORADOS -->
+                   <div class="flex items-center space-x-4">
+                    <!-- ICONO DE CARRITO MEJORADO - coherente con carrito.html -->
+                    <a href="#" class="cart-icon relative group p-2.5 hover:bglinear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all
+                    duration-300 transform hover:scale-105">
+                    <svg class="w-6 h-6 text-gray-700 group-hover:textblue-600 transition-all duration-300 group-hover:rotate-3" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" strokelinejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.1 5M7 13l-1.1
+                    5m0 0h1.1m0-5v5m0 0h10m-10 0a2 2 0 104 0m6 0a2 2 0 100 4"/>
+                </svg>
+                <!-- Contador con efecto pulso mejorado -->
+                <span id="cart-counter" class="cart-counter-pulse
+                absolute -top-2 -right-2 bg-linear-to-r from-red-500 via-pink-500 to-red-600
+                 text-white text-xs font-bold rounded-full min-w-5 h-5 flex items-center
+                 justify-center px-1 shadow-lg border-2 border-white" style="display:
+                 none;">0</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+<!-- categorias -->
+ <div class="text-center mb-12">
+     <h2 class="text-4xl font-bold mt-12">Celulares</h2>
+     <p class="text-lg text-gray-400 mt-4">Encuentra los mejores celulares aqui</p>
+ </div>
+<!--celulares 1-->
+ <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mx-auto py-8">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="6200000" data-product-id="macbook-pro-16">
+       <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+           <img src="https://preview.redd.it/check-out-the-samsung-galaxy-s25-ultra-in-titanium-white-v0-fxojkc18uwce1.jpeg?width=640&crop=smart&auto=webp&s=14396686f01fab79f12506db354aeff7c4ee451e"
+            alt="MacBook Pro 16 M3"
+            class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+            loading="lazy">
+       </div>
+   
+       <div class="p-6">
+           <h3 class="text-lg font-bold mb-2 text-gray-800">Samsung Galaxy S25 Ultra</h3>
+           <p class="text-sm text-gray-600 mb-4">5G 512GB Blanco CDMA</p>
+           <div class="flex items-center justify-between mb-4">
+               <div>
+                   <span class="text-2xl font-bold text-blue-600">$7.600.000</span>
+               </div>
+               <div class="flex text-yellow-400">
+                   ⭐️⭐️⭐️⭐️⭐️
+               </div>
+           </div>
+           <div class="flex space-x-2">
+               <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm cursor-pointer" data-product-id="macbook-pro-16">
+                   Ver Detalles 
+               </button>
+               <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm cursor-pointer"
+               data-product="MacBook Pro 16 M3"
+               data-price="6200000"
+               data-id="macbook-pro-16">
+               Comprar
+               </button>
+           </div>
+       </div>
+    </div>
+    <!-- celular 2-->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="6200000" data-product-id="macbook-pro-16">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+            <img src="https://ipadizate.com/hero/2024/08/iphone-16-pro-max-colores.1724170165.8291.jpg?width=1200"
+             alt="MacBook Pro 16 M3"
+             class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+             loading="lazy">
+        </div>
+    
+        <div class="p-6">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">iPhone 16 Pro Max</h3>
+            <p class="text-sm text-gray-600 mb-4">5G 8GB, 256GB iOS</p>
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-blue-600">$5.300.000</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm cursor-pointer" data-product-id="macbook-pro-16">
+                    Ver Detalles 
+                </button>
+                <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm cursor-pointer"
+                data-product="MacBook Pro 16 M3"
+                data-price="6200000"
+                data-id="macbook-pro-16">
+                Comprar
+                </button>
+            </div>
+        </div>
+     </div>
+     <!-- celular 3 -->
+     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="6200000" data-product-id="macbook-pro-16">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+            <img src="https://static01.galaxus.com/productimages/1/7/4/2/4/4/3/8/5/1/5/8/5/7/8/0/8/1/7/b5757cbe-3d92-481c-b4af-4e82174d9a49.jpg_720.jpeg"
+             alt="MacBook Pro 16 M3"
+             class="object-cover hover:scale-105 transition-transform duration-300 h-50"
+             loading="lazy">
+        </div>
+    
+        <div class="p-6">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Xiaomi 15 Ultra</h3>
+            <p class="text-sm text-gray-600 mb-4">5G 16GB / 512GB</p>
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-blue-600">$4.700.000</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm cursor-pointer" data-product-id="macbook-pro-16">
+                    Ver Detalles 
+                </button>
+                <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm cursor-pointer"
+                data-product="MacBook Pro 16 M3"
+                data-price="6200000"
+                data-id="macbook-pro-16">
+                Comprar
+                </button>
+            </div>
+        </div>
+     </div>
+     <!-- celular 4 -->
+     <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card" data-category="laptops" data-price="6200000" data-product-id="macbook-pro-16">
+        <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center relative overflow-hidden">
+            <img src="https://static01.galaxus.com/productimages/1/7/4/2/4/4/3/8/5/1/5/8/5/7/8/0/8/1/7/b5757cbe-3d92-481c-b4af-4e82174d9a49.jpg_720.jpeg"
+             alt="MacBook Pro 16 M3"
+             class="object-cover hover:scale-105 transition-transform duration-300 h-50"
+             loading="lazy">
+        </div>
+    
+        <div class="p-6">
+            <h3 class="text-lg font-bold mb-2 text-gray-800">Google Pixel 9 Pro</h3>
+            <p class="text-sm text-gray-600 mb-4">5G 16GB / 512GB</p>
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-blue-600">$4.700.000</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    ⭐️⭐️⭐️⭐️⭐️
+                </div>
+            </div>
+            <div class="flex space-x-2">
+                <button class="ver-detalles-btn bg-green-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm cursor-pointer" data-product-id="macbook-pro-16">
+                    Ver Detalles 
+                </button>
+                <button class="add-to-cart-btn bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm cursor-pointer"
+                data-product="MacBook Pro 16 M3"
+                data-price="6200000"
+                data-id="macbook-pro-16">
+                Comprar
+                </button>
+            </div>
+        </div>
+     </div>
+
+
+
