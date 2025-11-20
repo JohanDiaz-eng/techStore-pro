@@ -52,6 +52,7 @@
                   </div>
                   <!-- Cart and Mobile Menu MEJORADOS -->
                    <div class="flex items-center space-x-4">
+                    <div id="user-menu-container"></div>
                     <!-- ICONO DE CARRITO MEJORADO - coherente con carrito.html -->
                     <a href="#" class="cart-icon relative group p-2.5 hover:bglinear-to-r hover:from-blue-50 hover:to-indigo-50 rounded-xl transition-all
                     duration-300 transform hover:scale-105">
@@ -152,7 +153,7 @@
 
   </div>
 
-  <footer id="contacto" class="bg-gray-900 text-white py-12 mt-12">
+  <footer id="contacto" class="bg-gray-900 text-white py-12 mt-50">
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
@@ -202,6 +203,12 @@
         <p> &copy; 2025 TechStore Pro. Todos los derechos reservados.</p>
     </div>
  </footer>
+ <div id="logout-toast"
+          class="hidden fixed top-5 right-5 bg-green-600 text-white px-5 py-3 rounded-xl shadow-2xl z-9999
+            opacity-0 transition-opacity duration-500 text-sm font-semibold">
+               Sesión cerrada correctamente
+    </div>
 </body>
 <script src="./java/productos.js"></script>
+<script src="./java/perfil.js"></script>
 </html>

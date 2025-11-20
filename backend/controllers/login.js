@@ -18,7 +18,7 @@ export const loginUsuario = async (req, res) => {
         // comparar contraseña encriptada en la BS
 
         const passwordValida = await bcrypt.compare(password,usuario.password)
-        if (passwordValida){
+        if (!passwordValida){
             return res.status(401).json({message:"contraseña incorrecta"});
         }
 

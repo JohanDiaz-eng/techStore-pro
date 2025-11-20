@@ -81,30 +81,18 @@
                 </div>
 
                 <form id="register-form" class="grid md:grid-cols-2 gap-6 ">
-
                     <!-- Nombre -->
-                    <div>
+                    <div class="col-span-full">
                         <label for="nombre" class="block text-sm font-medium text-gray-700 mb-2">
                             <svg class="w-4 h-4 inline mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/>
                             </svg>
                             Nombre *
                         </label>
                         <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-gray-900 focus:outline-none">
-                        <p id="nombre-error" class="text-red-500 text-sm mt-1 hidden"></p>
+                        <p id="email-error" class="text-red-500 text-sm mt-1 hidden"></p>
                     </div>
 
-                    <!-- Apellido -->
-                    <div>
-                        <label for="apellido" class="block text-sm font-medium text-gray-700 mb-2">
-                            <svg class="w-4 h-4 inline mr-2 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm0 2c-3.33 0-10 1.67-10 5v3h20v-3c0-3.33-6.67-5-10-5z"/>
-                            </svg>
-                            Apellido *
-                        </label>
-                        <input type="text" id="apellido" name="apellido" required placeholder="Tu apellido" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-gray-900 focus:outline-none">
-                        <p id="apellido-error" class="text-red-500 text-sm mt-1 hidden"></p>
-                    </div>
 
                     <!-- email-->
                     <div class="col-span-full">

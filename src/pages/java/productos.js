@@ -6,13 +6,13 @@ async function cargarProductos() {
 
         const grid = document.getElementById("products-grid");
             grid.innerHTML= productos.map(productos=>`
-                <main>
+                <main class="w-100 h-100 ">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card"
                     data-category="laptops"
                     data-price="${productos.Precio}"
                     data-product-Id="${productos.productId}">
 
-                    <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48 flex items-center justify-center overflow-hidden">
+                    <div class="bg-linear-to-br from-gray-100 to-gray-200 h-48  flex items-center justify-center overflow-hidden">
                     <img src="${productos.Image}" alt="${productos.Nombre}"
                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                     loading="lazy">
