@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
                 localStorage.setItem("sesionActiva", "true");
                 localStorage.setItem("Usuario", JSON.stringify({
-                    id:resultado.usuario.id,
+                    id:resultado.usuario._id,
                     nombre: resultado.usuario.nombre,
                     telefono: resultado.usuario.telefono,
                     email: resultado.usuario.email,

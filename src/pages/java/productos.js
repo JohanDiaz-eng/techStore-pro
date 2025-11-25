@@ -6,7 +6,6 @@ async function cargarProductos() {
 
         const grid = document.getElementById("products-grid");
             grid.innerHTML= productos.map(productos=>`
-                <main class="w-100 h-100 ">
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 product-card"
                     data-category="laptops"
                     data-price="${productos.Precio}"
