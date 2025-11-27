@@ -37,28 +37,32 @@ document.addEventListener("DOMContentLoaded", async()=>{
     }
     // Crear el menu del usuario 
     contenedor.innerHTML= `
-    <div class ="relative">
+    <div class ="relative flex">
        <button id="user-menu-btn"
-            class="w-20 h-20 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-3xl">
+            class="w-25 h-25 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-4xl">
              <span id="user-avatar"></span>
         </button>
-
     <div id= "user-dropdown"
-    <div>
-    <p class="text-sm font-semibold text-gray-900" id="user-name"></p>
-    <p class="text-xs text-gray-500" id="user-email"></p>
+    <div class="p-7">
+    <p class="text-2xl font-semibold text-gray-900" id="user-name"></p>
+    <p class="text-2xl  text-gray-500" id="user-email"></p>
     </div>
-    </div> 
+    </div>
+    </div>
     `;
       3. //INSERTAR DATOS EN EL MENÚ
 
-    const avatar = `${usuario.nombre[0]}`.toUpperCase();
-    document.getElementById("user-avatar").textContent = avatar;
+      document.getElementById("user-name").textContent =
+      `${usuario.nombre}`;
+      
+      document.getElementById("user-email").textContent = usuario.email;
+      const avatar = `${usuario.nombre[0]}`.toUpperCase();
+      document.getElementById("user-avatar").textContent = avatar;
 
     
     //  4. ANIMACIÓN ABRIR/CERRAR
     
-    document.getElementById("user-menu-btn").addEventListener("click", () => {
+    document.getElementById("user-menu-btn").addEventListener("", () => {
         const drop = document.getElementById("user-dropdown");
 
         if (drop.classList.contains("hidden")) {
