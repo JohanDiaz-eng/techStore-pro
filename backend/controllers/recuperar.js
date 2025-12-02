@@ -5,8 +5,8 @@ import user from "../models/user.js"
 const transporte = nodemailer.createTransport({
     service: 'gmail', 
     auth: {
-        user:'diazmotajhoandanilo@gmail.com',
-        pass:'hxoilqepwsylvyks'
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
     }
 });
 
