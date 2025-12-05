@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Obtener perfil
     try {
-        const res = await fetch("http://localhost:8081/api/perfil/obtener", {
+        const res = await fetch("https://tiendavirtual-1-8tuy.onrender.com/api/perfil/obtener", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ email: perfil.email })

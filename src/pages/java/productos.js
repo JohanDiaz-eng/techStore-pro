@@ -1,7 +1,7 @@
 // funcion de cargar productos 
 async function cargarProductos() {
     try {
-        const response= await fetch("http://localhost:8081/api/productos");
+        const response= await fetch("https://tiendavirtual-1-8tuy.onrender.com/api/productos");
         const productos= await response.json();
 
         const grid = document.getElementById("products-grid");

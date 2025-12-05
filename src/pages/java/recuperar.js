@@ -6,7 +6,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     const email = document.getElementById("email").value;
 
     try {
-        const response = await fetch("http://localhost:8081/api/recuperar/solicitar-codigo", {
+        const response = await fetch("https://tiendavirtual-1-8tuy.onrender.com/api/recuperar/solicitar-codigo", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
