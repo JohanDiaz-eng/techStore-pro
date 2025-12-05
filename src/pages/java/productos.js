@@ -46,7 +46,7 @@ async function cargarProductos() {
                     Ver detalles
                     </button>
 
-                    <button class="add-to-cart-btn  bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-green-700 transition duration-300 flex-1 text-sm">
+                    <button class="add-to-cart-btn  bg-blue-600 text-white px-3 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex-1 text-sm"> 
                     Comprar
                     </button>
                     </div>
